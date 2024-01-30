@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "static" {
- name          = "single-bindery-401516-terraform-1"
+ name          = "python-practice-407605"
  location      = "US"
  storage_class = "STANDARD"
 
@@ -7,7 +7,7 @@ resource "google_storage_bucket" "static" {
 }
 
 provider "google" {
-    project = "single-bindery-401516"
+    project = "python-practice-407605"
     credentials = "terraformcloudbuild.json"
 
 
