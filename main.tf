@@ -8,7 +8,13 @@ resource "google_storage_bucket" "static" {
    prevent_destroy = true
  }
 }
+resource "google_storage_bucket" "static" {
+ name          = "python-practice-407605-new123"
+ location      = "US"
+ storage_class = "STANDARD"
 
+ uniform_bucket_level_access = true
+}
 provider "google" {
     project = "python-practice-407605"
     credentials = "terraformcloudbuild.json"
