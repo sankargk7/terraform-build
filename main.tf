@@ -5,7 +5,7 @@ resource "google_storage_bucket" "static" {
 
  uniform_bucket_level_access = true
  lifecycle {
-   prevent_destroy = false
+   prevent_destroy = true
  }
 }
 
