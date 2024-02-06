@@ -8,12 +8,21 @@ resource "google_storage_bucket" "static" {
    prevent_destroy = true
  }
 }
-resource "google_storage_bucket" "static" {
- name          = "python-practice-407605-new123"
- location      = "US"
- storage_class = "STANDARD"
+resource "google_compute_instance" "vm_instance" {
+name = "terraform-instance2"
+machine_type = "f1-micro"
+zone = "us-central1-c"
+boot_disk {
+initialize_params {
+image = "centos-cloud/centos-7"
+}
+}
 
- uniform_bucket_level_access = true
+network_interface {
+network = default
+access_config {
+}
+}
 }
 provider "google" {
     project = "python-practice-407605"
