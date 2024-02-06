@@ -12,6 +12,9 @@ resource "google_compute_instance" "vm" {
   name              = "terraform-instance-1"
   machine_type      = "n2-standard-2"
   zone              = "us-central1-a"
+  lifecycle {
+    prevent_destroy = false
+  }
 
   boot_disk {
     initialize_params {
