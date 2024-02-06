@@ -29,19 +29,19 @@ provider "google" {
     project = "python-practice-407605"
     credentials = "terraformcloudbuild.json"
 
-
-
-
-
-
-
-  
-
-
-    
-  
-    
 }
+
+
+
+
+
+  
+
+
+    
+  
+    
+
 
 
 
