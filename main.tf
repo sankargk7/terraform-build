@@ -10,7 +10,8 @@ resource "google_storage_bucket" "static" {
 }
 resource "google_compute_instance" "vm" {
   name              = "terraform-instance-1"
-  machine_type      = "f1-micro"
+  machine_type      = "n2-standard-2"
+  zone              = "us-central1-a"
 
   boot_disk {
     initialize_params {
