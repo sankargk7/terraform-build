@@ -1,16 +1,14 @@
 resource "google_storage_bucket" "static" {
- name          = "python-practice-407605-new1234"
+ name          = "python-practice-407605-new12345"
  location      = "US"
  storage_class = "STANDARD"
 
  uniform_bucket_level_access = true
- lifecycle {
-   prevent_destroy = true
- } 
+ force_destroy               = false
       
 }
 resource "google_compute_instance" "vm" {
-  name              = "terraform-instance-12"
+  name              = "terraform-instance-123"
   machine_type      = "n2-standard-2"
   zone              = "us-central1-a"
   lifecycle {
