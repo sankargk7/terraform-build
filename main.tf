@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "static" {
- name          = "python-practice-407605-new123"
+ name          = "python-practice-407605-new1234"
  location      = "US"
  storage_class = "STANDARD"
 
@@ -7,7 +7,7 @@ resource "google_storage_bucket" "static" {
       
 }
 resource "google_compute_instance" "vm" {
-  name              = "terraform-instance-1"
+  name              = "terraform-instance-12"
   machine_type      = "n2-standard-2"
   zone              = "us-central1-a"
   lifecycle {
