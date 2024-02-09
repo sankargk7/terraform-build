@@ -12,7 +12,7 @@ resource "google_compute_instance" "vm" {
   machine_type      = "n2-standard-2"
   zone              = "us-central1-a"
   lifecycle {
-    prevent_destroy = false
+    prevent_destroy = true
   }
 
   boot_disk {
