@@ -1,4 +1,5 @@
-#!/bin/bash
+
+#!/usr/bin/env bash
 
 
 # List of targets (modules and resources)
