@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # List of SQL instances to stop
-SQL_INSTANCES=("db-instance-1" "destroy-db "ps-db-1")
+SQL_INSTANCES=("db-instance-1" "destroy-db" "ps-db-1")
 
 
 # Loop through each SQL instance and stop it
