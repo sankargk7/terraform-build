@@ -7,6 +7,6 @@ steps:
       #!/usr/bin/env bash
       echo "Hello World"
       chmod +x targetd.sh
-      sh targetd.sh 
+      bash targetd.sh 
 options:
   logging: CLOUD_LOGGING_ONLY    
