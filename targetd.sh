@@ -3,9 +3,7 @@
 
 
 # List of targets (modules and resources)
-TARGETS=(
-    "google_storage_bucket.static"
-)
+TARGETS=("google_storage_bucket.static")
 
 # Destroy specified targets
 for TARGET in "${TARGETS[@]}"
@@ -14,6 +12,6 @@ do
 done
 echo ${TARGET_LIST}
 # Run terraform destroy with multiple -target options
-#terraform destroy "${TARGET_LIST[@]}"
+terraform destroy "${TARGET_LIST[@]}"
 
 
