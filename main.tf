@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "static" {
- name          = "python-practice-407605-new12345"
+ name          = "python-practice-407605-new123456"
  location      = "US"
  storage_class = "STANDARD"
 
