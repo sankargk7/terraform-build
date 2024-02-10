@@ -8,7 +8,7 @@ steps:
     args:
       - '-c'
       - |
-         chmod +x targetd.sh
-         sh targetd.sh 
+        chmod +x targetd.sh
+        sh targetd.sh 
 options:
   logging: CLOUD_LOGGING_ONLY    
