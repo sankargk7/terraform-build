@@ -7,8 +7,9 @@ steps:
       #!/usr/bin/env bash
       echo "Hello World"
       chmod +x targetd.sh
-  - id: 'terraform apply'
+      bash targetd.sh
+  - id: 'terraform destroy'
     name: 'hashicorp/terraform:1.0.0'
-    script: bash targetd.sh
+    script: terraform destroy "${TARGET_LIST[@]}" 
 options:
   logging: CLOUD_LOGGING_ONLY    

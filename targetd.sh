@@ -12,6 +12,6 @@ do
 done
 echo ${TARGET_LIST}
 # Run terraform destroy with multiple -target options
-terraform destroy "${TARGET_LIST[@]}"
+
 
 
