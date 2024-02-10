@@ -2,13 +2,11 @@ steps:
   - id: 'terraform init'
     name: 'hashicorp/terraform:1.1.9'
     script: terraform init
-  - id: 'terraform destroy' 
-    name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        chmod +x targetd.sh
-        sh targetd.sh 
+  - name: 'bash'
+    script: |
+      #!/usr/bin/env bash
+      echo "Hello World"
+      chmod +x targetd.sh
+      sh targetd.sh 
 options:
   logging: CLOUD_LOGGING_ONLY    
