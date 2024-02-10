@@ -2,10 +2,8 @@
 #!/usr/bin/env bash
 
 
-# List of targets (modules and resources)
-sudo apt update -y
-sudo apt-get install terraform -y
-echo terraform --version
+
+echo terraform version
 
 TARGETS=("google_storage_bucket.static")
 
@@ -16,6 +14,6 @@ do
 done
 echo ${TARGET_LIST}
 # Run terraform destroy with multiple -target options
-terraform destroy "${TARGET_LIST[@]}"
+#terraform destroy "${TARGET_LIST[@]}"
 
 
