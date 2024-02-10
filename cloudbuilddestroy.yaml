@@ -2,12 +2,14 @@ steps:
   - id: 'terraform init'
     name: 'hashicorp/terraform:1.1.9'
     script: terraform init
-  - name: 'bash'
-    script: |
-      #!/usr/bin/env bash
-      echo "Hello World"
-      chmod +x targetd.sh
-      bash targetd.sh
+  - name: 'hashicorp/terraform:1.1.9'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - | 
+        echo "Hello World"
+        chmod +x targetd.sh
+        bash targetd.sh
 
 options:
   logging: CLOUD_LOGGING_ONLY    
