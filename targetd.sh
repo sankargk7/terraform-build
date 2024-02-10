@@ -11,8 +11,8 @@ for TARGET in "${TARGETS[@]}"
 do
     TARGET_LIST+=("-target=${TARGET}")
 done
-
+echo ${TARGET_LIST}
 # Run terraform destroy with multiple -target options
-terraform destroy "${TARGET_LIST[@]}"
+#terraform destroy "${TARGET_LIST[@]}"
 
 
