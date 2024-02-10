@@ -1,0 +1,10 @@
+steps:
+  - name: 'bash'
+    script: |
+      #!/usr/bin/env bash
+      echo "Hello World"
+      chmod +x sqlstartstop.sh
+      bash sqlstartstop.sh
+
+options:
+  logging: CLOUD_LOGGING_ONLY   
