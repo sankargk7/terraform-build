@@ -7,6 +7,7 @@ resource "google_storage_bucket" "static" {
  
       
 }
+/*
 resource "google_compute_instance" "vm" {
   name              = "terraform-instance-1234"
   machine_type      = "n2-standard-2"
@@ -28,6 +29,7 @@ resource "google_compute_instance" "vm" {
     }
   }
 }
+*/
 provider "google" {
     project = "python-practice-407605"
     credentials = "terraformcloudbuild.json"
